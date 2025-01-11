@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA-TE-TI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TA-TE-TI</h1>
+    <div id="scoreboard">
+        <h2>Tablero de Resultados</h2>
+        <p>Jugador X: <span id="scoreX">0</span></p>
+        <p>Jugador O: <span id="scoreO">0</span></p>
+        <p>Empates: <span id="scoreDraw">0</span></p>
+        <p>Juegos restantes: <span id="gamesLeft">10</span></p>
+    </div>
+    <div id="message"></div>
+    <div id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <button id="restartButton">Reiniciar Partida</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-message"></h2>
+            </div>
+            <button id="closeModal">Cerrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
